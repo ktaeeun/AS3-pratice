@@ -23,8 +23,11 @@ package
 			//var wordHighlighter:WordHighlighter = new WordHighlighter();
 			//stage.addChild(wordHighlighter);
 			
-			var shapeExam:ShapeExam = new ShapeExam();
-			stage.addChild(shapeExam);
+			//var shapeExam:ShapeExam = new ShapeExam();
+			//stage.addChild(shapeExam);
+			
+			var rotatingRectangles:RotatingRectangles = new RotatingRectangles();
+			stage.addChild(rotatingRectangles);
 			// entry point
 		}
 		
