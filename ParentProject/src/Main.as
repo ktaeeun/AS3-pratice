@@ -26,8 +26,12 @@ package
 			//var shapeExam:ShapeExam = new ShapeExam();
 			//stage.addChild(shapeExam);
 			
-			var rotatingRectangles:RotatingRectangles = new RotatingRectangles();
-			stage.addChild(rotatingRectangles);
+			//var rotatingRectangles:RotatingRectangles = new RotatingRectangles();
+			//stage.addChild(rotatingRectangles);
+			
+			var app:App = new App();
+			stage.addChild(app);
+			
 			// entry point
 		}
 		
