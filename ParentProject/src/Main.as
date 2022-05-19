@@ -1,4 +1,4 @@
-package
+package 
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -19,22 +19,12 @@ package
 		private function init(e:Event = null):void 
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
-			
-			//var wordHighlighter:WordHighlighter = new WordHighlighter();
-			//stage.addChild(wordHighlighter);
-			
-			//var shapeExam:ShapeExam = new ShapeExam();
-			//stage.addChild(shapeExam);
-			
-			//var rotatingRectangles:RotatingRectangles = new RotatingRectangles();
-			//stage.addChild(rotatingRectangles);
-			
-			var app:App = new App();
-			stage.addChild(app);
-			
 			// entry point
+			var imageTest:ImageTest = new ImageTest();
+			addChild(imageTest);
 		}
 		
 	}
 	
-}       
+	
+}

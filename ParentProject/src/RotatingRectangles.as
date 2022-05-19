@@ -8,8 +8,14 @@ package
 	 * @author 
 	 */
 	public class RotatingRectangles extends Sprite {
-		public function RotatingRectangles() {
+		private var _stage:Stage;
+		
+		public function RotatingRectangles($stage:Stage) {
 			// 사각형 20개 만들기
+			if ($stage != null) {
+				_stage = $stage;
+			}
+			
 			var rects:Array = new Array();
 			for (var i:int = 0; i < 20; i++) {
 				rects[i] = new ShapeExam();
@@ -19,10 +25,15 @@ package
 				rects[i].x = Math.floor(Math.random() * 500);
 				rects[i].y = Math.floor(Math.random() * 400);
 				addChild(rects[i]);
+				var obj:DisplayObject 
 			}
 			
 			// 마우스 클릭을 등록
-			stage.addEventListener(MouseEvent.MOUSE_DOWN, mouseDownListener);
+			_stage.addEventListener(MouseEvent.MOUSE_DOWN, mouseDownListener);
+		}
+		
+		public function setStage($stage:Stage):void {
+			_stage = $stage;
 		}
 		
 		private function mouseDownListener(e:Event):void {
