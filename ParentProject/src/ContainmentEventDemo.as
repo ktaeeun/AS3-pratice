@@ -10,8 +10,8 @@ package
 	{
 		
 		public function ContainmentEventDemo() 
-		{
-		
+	
+			
 			//sprite  객체 만들기
 			var container:Sprite = new Sprite();
 			var child:Sprite = new Sprite();

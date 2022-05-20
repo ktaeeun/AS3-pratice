@@ -1,7 +1,7 @@
 package 
 {
-	import flash.display.Sprite;
-	import flash.events.Event;
+	import flash.display.*;
+	import flash.events.*;
 	
 	/**
 	 * ...
@@ -17,11 +17,13 @@ package
 		}
 		
 		private function init(e:Event = null):void 
+		
 		{
+			
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			var checkBox:CheckBox = new CheckBox("클릭");
-			addChild(checkBox);
+			var clickSensor:ClickSensor = new ClickSensor();
+			stage.addChild(clickSensor);
 		}
 		
 	}

@@ -22,6 +22,7 @@ package
 			
 			//텍스트 레이블 만들기
 			label = new TextField();
+			
 			label.text = msg;
 			label.autoSize = TextFieldAutoSize.LEFT;
 			label.selectable = false;
