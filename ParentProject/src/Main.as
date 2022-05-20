@@ -22,8 +22,8 @@ package
 			
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			var clickSensor:ClickSensor = new ClickSensor();
-			stage.addChild(clickSensor);
+			var objectKeyboardSensor:ObjectKeyboardSensor = new ObjectKeyboardSensor();
+			stage.addChild(objectKeyboardSensor);
 		}
 		
 	}
