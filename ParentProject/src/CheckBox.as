@@ -23,7 +23,7 @@ package
 			//텍스트 레이블 만들기
 			label = new TextField();
 			label.text = msg;
-			label.autoSize = TextFieldAuitoSize.LEFT;
+			label.autoSize = TextFieldAutoSize.LEFT;
 			label.selectable = false;
 			
 			// 텍스트레이블을 체크박스 옆에 위치하기
@@ -46,7 +46,7 @@ package
 				checked = false;
 			} else {
 				icon.check();
-				checked = ture;
+				checked = true;
 			}
 		}
 	}

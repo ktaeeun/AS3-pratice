@@ -23,7 +23,7 @@ package
 		
 		// 체크안된 체크박스
 		public function uncheck():void {
-			graphics:clear();
+			graphics.clear();
 			graphics.lineStyle(1);
 			graphics.beginFill(0xFFFFFF);
 			graphics.drawRect(0, 0, 15, 15);

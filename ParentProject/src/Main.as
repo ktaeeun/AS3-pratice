@@ -20,8 +20,8 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			var imageTest:ImageTest = new ImageTest();
-			addChild(imageTest);
+			var checkBox:CheckBox = new CheckBox("클릭");
+			addChild(checkBox);
 		}
 		
 	}
